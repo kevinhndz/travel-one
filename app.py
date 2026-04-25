@@ -1,4 +1,6 @@
 import os
+import mimetypes
+mimetypes.add_type('text/css','.css')
 from flask import Flask, render_template, request, redirect, url_for, session
 from flask_pymongo import PyMongo
 from dotenv import load_dotenv
