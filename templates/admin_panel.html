@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><title>Admin Panel</title>
+<style>
+  body{font-family:sans-serif;padding:20px}
+  table{border-collapse:collapse;width:100%}
+  th,td{border:1px solid #ccc;padding:8px;text-align:left}
+  th{background:#333;color:#fff}
+  tr:nth-child(even){background:#f5f5f5}
+</style>
+</head>
+<body>
+  <h2>📋 Clientes Interesados</h2>
+  <a href="/admin/logout">Cerrar sesión</a><br><br>
+  <table>
+    <tr>
+      <th>#</th><th>Nombre</th><th>Teléfono</th>
+      <th>Destino</th><th>Fecha</th><th>Comentario</th>
+    </tr>
+    {% for i, c in enumerate(clientes) %}
+    <tr>
+      <td>{{ i+1 }}</td>
+      <td>{{ c.nombre_cliente }}</td>
+      <td>{{ c.telefono }}</td>
+      <td>{{ c.destino }}</td>
+      <td>{{ c.fecha_v }}</td>
+      <td>{{ c.Comment }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</body>
+</html>

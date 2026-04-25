@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/contact.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>Contacto - Travel One</title>
+</head>
+<body>
+
+    <header>
+        <div class="contenedor">
+
+            <p class="logo">✈️ Travel One</p>
+
+            {% if nombre %}
+
+                <div id="mensaje-gracias">
+                    <p>🎉 ¡Gracias <strong>{{ nombre }}</strong>! Te contactaremos en las próximas <strong>24 horas hábiles</strong>. ¡Prepárate para tu aventura! ✈️</p>
+                </div>
+
+            {% else %}
+
+                <h1>Estás a un Paso de tu Viaje Soñado</h1>
+                <h3>Por favor llena los datos y te contactamos pronto</h3>
+
+                <form method="POST" action="/contacto">
+                    <input type="text" name="nombre" required placeholder="Tu nombre completo">
+                    <br>
+                    <input type="text" name="telefono" required placeholder="Tu número de teléfono">
+                    <br>
+                    <input type="text" name="destino" placeholder="¿A dónde quieres ir?">
+                    <br>
+                    <input type="month" name="fecha">
+                    <br>
+                    <textarea name="detalles" placeholder="Cuéntanos cualquier detalle extra, preferencias de hotel, múltiples destinos..."></textarea>
+                    <br>
+                    <input type="submit" value="Enviar Formulario">
+                </form>
+
+            {% endif %}
+
+        </div>
+    </header>
+
+    <a href="/">
+        <button>← Regresar a Inicio</button>
+    </a>
+
+</body>
+</html>
