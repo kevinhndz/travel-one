@@ -1,81 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="{{ url_for('static', filename='CSS/home.css') }}">
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-  <title>Travel One</title>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Travel One: experiencias de viaje diseñadas para ti.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='CSS/home.css') }}"><title>Travel One | Viaja diferente</title>
 </head>
 <body>
-
-  <header>
-    <div class="contenedor">
-      <p class="logo">✈️ Travel One</p>
-        <nav>
-          <a href="/contacto">Contactanos</a>
-        </nav>
-    </div>
-  </header>
-
-  <section id="hero">
-    <h1>Encuentra tu proximo <i>viaje!</i></h1>
-    <a href="/contacto"><button>Quiero informacion YA!</button></a>
-  </section>
-
-  <section id="donde_sea">
-    <div class="contenedor">
-      <h2>Te llevamos donde tu quieras</h2>
-      <p>¿Soñas con ver el mundo pero no sabes por dónde empezar? En Travel One nos encargamos de todo: vuelos, hoteles, tours y más. Solo trae las ganas de aventurarte, nosotros hacemos el resto.</p>
-      <img src="https://images.unsplash.com/photo-1488085061387-422e29b40080?w=1000&q=80" alt="Mapa del mundo con avión de papel" class="img-seccion">
-    </div>
-  </section>
-
-  <section id="mas_solicitados">
-    <div class="contenedor">
-      <h2>Algunos de nuestros Paquetes</h2>
-
-      <div class="carta">
-        <img src="https://images.unsplash.com/photo-1536599018102-9f803c140fc1?w=600&q=80" alt="Cartagena Colombia">
-        <h3>Colombia</h3>
-        <p>Desde las playas de Cartagena hasta el verde de la región cafetera, Colombia tiene de todo. Un destino que te va a dejar sin palabras y con ganas de volver.</p>
-      </div>
-
-      <div class="carta">
-        <img src="https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=600&q=80" alt="Islas de la Bahía Honduras">
-        <h3>Islas de la Bahia</h3>
-        <p>Aguas cristalinas, arrecifes de coral y una tranquilidad que no encontrarás en ningún otro lugar. Las Islas de la Bahía son el paraíso que estabas buscando.</p>
-      </div>
-
-      <div class="carta">
-        <img src="https://images.unsplash.com/photo-1543785734-4b6e564642f8?w=600&q=80" alt="España Barcelona">
-        <h3>España</h3>
-        <p>Arte, historia, gastronomía y una vida nocturna increíble. España lo tiene todo, desde la Sagrada Familia en Barcelona hasta los tablados flamencos en Sevilla.</p>
-      </div>
-
-    </div>
-  </section>
-
-  <section id="caracteristicas">
-    <div id="container">
-      <ul>
-        <li>🙋 Asistencia Personalizada</li>
-        <li>🛡️ Viajes con Seguro</li>
-        <li>💸 Los precios mas bajos del mercado</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="aplica_ya">
-    <h1>¿Listo para tu Viaje?</h1>
-    <a href="/contacto"><button>Deseo conocer mas</button></a>
-  </section>
-
-  <footer>
-    <div class="container">
-      <p>&copy; Travel One 2026</p>
-    </div>
-  </footer>
-
-</body>
-</html>
+<header class="site-header"><div class="contenedor nav-wrap"><a class="logo" href="/"><span>✦</span> Travel One</a><nav><a href="#destinos">Destinos</a><a href="#experiencia">Experiencia</a><a class="nav-cta" href="/contacto">Planear mi viaje <span>↗</span></a></nav></div></header>
+<main>
+<section class="hero"><div class="contenedor hero-grid"><div class="hero-copy"><div class="eyebrow"><span></span> Tu próxima historia comienza aquí</div><h1>El mundo es<br><em>tu destino.</em></h1><p>Diseñamos viajes memorables, con la libertad de descubrir y la tranquilidad de tener todo bajo control.</p><div class="hero-actions"><a class="button button-primary" href="/contacto">Explorar experiencias <span>→</span></a><a class="text-link" href="#destinos">Ver destinos <span>↓</span></a></div><div class="hero-proof"><div class="avatars"><span>J</span><span>M</span><span>A</span><span>+</span></div><div><strong>4.9/5</strong><small>Más de 2,000 viajeros felices</small></div></div></div><div class="hero-visual"><div class="hero-image image-card"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=85" alt="Playa tropical al atardecer"><div class="image-label"><span>☼</span><div><small>Recomendado</small><strong>Islas de la Bahía</strong></div></div></div><div class="floating-card glass-card"><span class="sun-icon">✦</span><div><strong>12+</strong><small>destinos únicos</small></div></div><div class="route-card glass-card"><span>⌁</span><div><small>Tu próxima ruta</small><strong>Roatán → Barcelona</strong></div><b>↗</b></div></div></div><div class="scroll-note">SCROLL PARA DESCUBRIR <span>↓</span></div></section>
+<section id="destinos" class="section destinations"><div class="contenedor"><div class="section-heading"><div><span class="eyebrow">INSPIRACIÓN PARA VIAJAR</span><h2>Encuentra tu próximo<br><em>lugar favorito.</em></h2></div><p>Escapadas que despiertan tus sentidos y se quedan contigo para siempre.</p></div><div class="destination-grid"><article class="destination-card featured"><img src="https://images.unsplash.com/photo-1536599018102-9f803c140fc1?w=1000&q=85" alt="Cartagena Colombia"><div class="card-overlay"><span>01 — CULTURA & SABOR</span><h3>Cartagena</h3><p>Color, historia y mar Caribe.</p><a href="/contacto">Descubrir <span>↗</span></a></div></article><article class="destination-card"><img src="https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=800&q=85" alt="Islas de la Bahía"><div class="card-overlay"><span>02 — MAR & AVENTURA</span><h3>Roatán</h3><p>El azul que estabas buscando.</p><a href="/contacto">Descubrir <span>↗</span></a></div></article><article class="destination-card"><img src="https://images.unsplash.com/photo-1543785734-4b6e564642f8?w=800&q=85" alt="Barcelona España"><div class="card-overlay"><span>03 — ARTE & VIDA</span><h3>Barcelona</h3><p>Una ciudad que nunca duerme.</p><a href="/contacto">Descubrir <span>↗</span></a></div></article></div></div></section>
+<section id="experiencia" class="section experience"><div class="contenedor experience-grid"><div class="experience-photo image-card"><img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1000&q=85" alt="Lago entre montañas"><span class="photo-tag">TRAVEL ONE<br><b>DESDE 2018</b></span></div><div class="experience-copy"><span class="eyebrow">VIAJA CON INTENCIÓN</span><h2>No organizamos viajes.<br><em>Creamos recuerdos.</em></h2><p>Tu tiempo es valioso. Por eso cuidamos cada detalle para que tú solo tengas que elegir qué historia quieres contar.</p><div class="feature-list"><div><span>✦</span><div><strong>Curaduría local</strong><small>Experiencias auténticas, lejos de lo común.</small></div></div><div><span>✦</span><div><strong>Acompañamiento real</strong><small>Estamos contigo antes, durante y después.</small></div></div><div><span>✦</span><div><strong>Libertad total</strong><small>Tu viaje, tu ritmo, tus reglas.</small></div></div></div><a class="button button-dark" href="/contacto">Conoce nuestro servicio <span>→</span></a></div></div></section>
+<section class="cta"><div class="contenedor cta-content"><span class="eyebrow">¿LISTO PARA DESPEGAR?</span><h2>Tu próxima aventura<br><em>te está esperando.</em></h2><a class="button button-light" href="/contacto">Hablemos de tu viaje <span>↗</span></a></div></section>
+</main><footer><div class="contenedor footer-wrap"><a class="logo" href="/"><span>✦</span> Travel One</a><p>Diseñamos experiencias que merecen ser recordadas.</p><small>© Travel One 2026</small></div></footer>
+</body></html>
